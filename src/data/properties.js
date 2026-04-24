@@ -1,0 +1,107 @@
+export const properties = [
+  {
+    id: "prop-001",
+    slug: "camellias-signature-residence",
+    title: "Camellias Signature Residence",
+    purpose: "buy",
+    propertyType: "Apartment",
+    city: "Gurgaon",
+    locality: "Golf Course Road",
+    price: 175000000,
+    priceLabel: "Rs 17.5 Cr onwards",
+    bedrooms: 4,
+    bathrooms: 5,
+    area: 7350,
+    areaUnit: "sq.ft.",
+    featuredImage:
+      "linear-gradient(135deg, rgba(227, 216, 197, 1) 0%, rgba(248, 239, 228, 1) 100%)",
+    galleryImages: [
+      "linear-gradient(135deg, rgba(235, 224, 204, 1) 0%, rgba(246, 237, 226, 1) 100%)",
+      "linear-gradient(135deg, rgba(221, 205, 179, 1) 0%, rgba(243, 234, 221, 1) 100%)",
+      "linear-gradient(135deg, rgba(231, 214, 188, 1) 0%, rgba(248, 242, 233, 1) 100%)",
+    ],
+    shortDescription:
+      "A trophy residence with skyline views, private deck access, and concierge-ready luxury living.",
+    fullDescription:
+      "Designed for discerning buyers who value privacy, prestige, and a long-term asset in one of NCR's most established luxury corridors. This home pairs statement living spaces with refined arrival experience and club-grade amenities.",
+    highlights: [
+      "Golf-facing arrival experience",
+      "Grand entertaining layout",
+      "Ultra-premium clubhouse ecosystem",
+    ],
+    amenities: ["Private deck", "Residents club", "Sky lounge", "Valet-ready drop-off"],
+    featured: true,
+    verified: true,
+    ctaMessage: "Request a curated walkthrough and pricing brief.",
+  },
+  {
+    id: "prop-002",
+    slug: "crestview-executive-residences",
+    title: "Crestview Executive Residences",
+    purpose: "rent",
+    propertyType: "Apartment",
+    city: "Gurgaon",
+    locality: "Golf Course Extension Road",
+    price: 185000,
+    priceLabel: "Rs 1.85 L / month",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 2140,
+    areaUnit: "sq.ft.",
+    featuredImage:
+      "linear-gradient(135deg, rgba(225, 217, 206, 1) 0%, rgba(249, 243, 235, 1) 100%)",
+    galleryImages: [
+      "linear-gradient(135deg, rgba(232, 220, 203, 1) 0%, rgba(247, 239, 229, 1) 100%)",
+      "linear-gradient(135deg, rgba(219, 207, 190, 1) 0%, rgba(243, 237, 230, 1) 100%)",
+      "linear-gradient(135deg, rgba(241, 231, 214, 1) 0%, rgba(252, 247, 241, 1) 100%)",
+    ],
+    shortDescription:
+      "A furnished executive rental ideal for senior professionals relocating into Gurgaon’s premium corridor.",
+    fullDescription:
+      "This polished rental offering balances finish quality, clubhouse convenience, and fast commute access for professionals who need immediate move-in readiness without compromising on address quality or landlord credibility.",
+    highlights: [
+      "Immediate move-in readiness",
+      "Corporate-friendly lease profile",
+      "Fast access to Golf Course Road and business hubs",
+    ],
+    amenities: ["Furnished", "Clubhouse access", "Power backup", "Reserved parking"],
+    featured: true,
+    verified: true,
+    ctaMessage: "Check availability and lease terms with our team.",
+  },
+  {
+    id: "prop-003",
+    slug: "dlf-phase-5-park-residence",
+    title: "DLF Phase 5 Park Residence",
+    purpose: "buy",
+    propertyType: "Builder Floor",
+    city: "Gurgaon",
+    locality: "DLF Phase 5",
+    price: 92500000,
+    priceLabel: "Rs 9.25 Cr onwards",
+    bedrooms: 3,
+    bathrooms: 4,
+    area: 3400,
+    areaUnit: "sq.ft.",
+    featuredImage:
+      "linear-gradient(135deg, rgba(229, 215, 194, 1) 0%, rgba(250, 242, 233, 1) 100%)",
+    galleryImages: [
+      "linear-gradient(135deg, rgba(216, 202, 178, 1) 0%, rgba(244, 236, 225, 1) 100%)",
+      "linear-gradient(135deg, rgba(236, 224, 205, 1) 0%, rgba(248, 242, 235, 1) 100%)",
+      "linear-gradient(135deg, rgba(224, 210, 189, 1) 0%, rgba(241, 234, 223, 1) 100%)",
+    ],
+    shortDescription:
+      "A refined park-facing floor in one of Gurgaon’s most established premium neighbourhoods.",
+    fullDescription:
+      "Tailored for affluent end users and family buyers, this residence delivers a premium mix of privacy, elegant interior proportions, and long-term resale confidence in one of Gurgaon’s most trusted residential belts.",
+    highlights: [
+      "Park-facing arrival and balconies",
+      "Low-density premium neighbourhood",
+      "Strong resale and end-user appeal",
+    ],
+    amenities: ["Private lift access", "Stilt parking", "Terrace lounge", "Landscaped frontage"],
+    featured: true,
+    verified: true,
+    ctaMessage: "Ask for inventory options and a private consultation.",
+  },
+];

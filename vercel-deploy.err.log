@@ -1,0 +1,46 @@
+(node:29592) ExperimentalWarning: CommonJS module C:\Users\vipin\AppData\Local\nvm\v23.1.0\node_modules\npm\node_modules\debug\src\node.js is loading ES Module C:\Users\vipin\AppData\Local\nvm\v23.1.0\node_modules\npm\node_modules\supports-color\index.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Vite
+
+Linked to astraoracle-5510s-projects/business-template-dealer (created .vercel and added it to .gitignore)
+Deploying astraoracle-5510s-projects/business-template-dealer
+Uploading [--------------------] (0.0B/852.5KB)
+Uploading [=====---------------] (213.7KB/852.5KB)
+Uploading [==========----------] (438.7KB/852.5KB)
+Uploading [===============-----] (655.2KB/852.5KB)
+Uploading [====================] (852.5KB/852.5KB)
+Inspect: https://vercel.com/astraoracle-5510s-projects/business-template-dealer/AJF4ngzmpVWKaDRLM8c1dnVAa1HP [3s]
+Production: https://business-template-dealer-q449migr6-astraoracle-5510s-projects.vercel.app [3s]
+Building...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 102 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 51.6.1
+Building: Installing dependencies...
+Building: added 84 packages in 2s
+Building: 14 packages are looking for funding
+Building: run `npm fund` for details
+Building: Running "npm run build"
+Building: > business-template-dealer@0.1.0 build
+Building: > vite build
+Building: vite v7.3.2 building client environment for production...
+Building: transforming...
+Building: ✓ 111 modules transformed.
+Building: rendering chunks...
+Building: computing gzip size...
+Building: dist/index.html                   0.53 kB │ gzip:   0.33 kB
+Building: dist/assets/index-2yfndjhB.css   44.87 kB │ gzip:   7.90 kB
+Building: dist/assets/index-Cps4svSw.js   447.82 kB │ gzip: 130.02 kB
+Building: ✓ built in 2.26s
+Building: Build Completed in /vercel/output [6s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://business-template-dealer-q449migr6-astraoracle-5510s-projects.vercel.app [16s]
+Completing...
+Aliased: https://business-template-dealer.vercel.app [16s]
