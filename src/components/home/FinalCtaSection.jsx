@@ -16,12 +16,12 @@ export function FinalCtaSection() {
       <div className="rounded-[36px] bg-[linear-gradient(135deg,#1d2433,#283041)] px-6 py-8 text-white shadow-[0_28px_70px_rgba(20,26,41,0.18)] sm:px-8 md:px-12 md:py-12">
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f1d4ac]">Final call to action</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f1d4ac]">Priority Access</p>
             <h2 className="section-title text-3xl font-semibold leading-tight sm:text-4xl">
-              Book a premium consultation and move faster with more clarity.
+              Ready to find your next premium home?
             </h2>
             <p className="max-w-2xl text-sm leading-8 text-[rgba(255,255,255,0.76)] sm:text-base">
-              Push high-intent visitors toward WhatsApp first, then offer a browsing route for those still comparing options.
+              Book a private consultation with our advisory team. We'll help you navigate Gurgaon's most exclusive micro-markets with clarity and confidence.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
@@ -29,15 +29,15 @@ export function FinalCtaSection() {
               href={whatsappUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--color-text)] transition duration-300 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-bold text-[#1D2433] transition duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              {siteConfig.ctaLabels.whatsapp}
+              WhatsApp for Priority Access
             </a>
             <Link
               to="/buy"
-              className="inline-flex items-center justify-center rounded-full border border-[rgba(255,255,255,0.18)] px-6 py-4 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[rgba(255,255,255,0.08)]"
+              className="inline-flex items-center justify-center rounded-full border border-[rgba(255,255,255,0.2)] px-8 py-4 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-[rgba(255,255,255,0.1)]"
             >
-              {siteConfig.ctaLabels.listings}
+              Explore Listings
             </Link>
           </div>
         </div>
