@@ -3,7 +3,7 @@ import { FeaturedPropertiesSection } from "../components/home/FeaturedProperties
 import { WhyChooseUsSection } from "../components/home/WhyChooseUsSection";
 import { FeaturedLocalitiesSection } from "../components/home/FeaturedLocalitiesSection";
 import { TestimonialsSection } from "../components/home/TestimonialsSection";
-import { FinalCtaSection } from "../components/home/FinalCtaSection";
+import { PriorityCtaSection } from "../components/home/PriorityCtaSection";
 import { StickyMobileActionBar } from "../components/home/StickyMobileActionBar";
 import { siteConfig } from "../config/siteConfig";
 import { localities } from "../data/localities";
@@ -27,7 +27,7 @@ export function HomePage() {
       <WhyChooseUsSection />
       <FeaturedLocalitiesSection localities={featuredLocalities} />
       <TestimonialsSection testimonials={testimonials} />
-      <FinalCtaSection />
+      <PriorityCtaSection />
       <StickyMobileActionBar />
     </div>
   );
