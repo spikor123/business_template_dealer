@@ -61,9 +61,6 @@ function createBrandedPlaceholder({
   return toSvgDataUrl(svg);
 }
 
-  return toSvgDataUrl(svg);
-}
-
 function getInitials(value) {
   const parts = String(value || "")
     .trim()
