@@ -29,7 +29,8 @@ export function FinalCtaSection() {
               href={whatsappUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-bold text-[#1D2433] transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+              style={{ color: "#1D2433 !important" }}
+              className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-bold transition duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               WhatsApp for Priority Access
             </a>
