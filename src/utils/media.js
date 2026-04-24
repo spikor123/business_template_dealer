@@ -18,38 +18,48 @@ function createBrandedPlaceholder({
   eyebrow = "Urban Crest Realty",
   title = "Premium Gurgaon Property",
   subtitle = "Curated visual preview",
-  align = "left",
+  align = "center",
 }) {
-  const textAnchor = align === "center" ? "middle" : "start";
-  const x = align === "center" ? "600" : "86";
+  const textAnchor = "middle";
+  const centerX = "600";
 
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
       <defs>
         <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#F7F0E7"/>
-          <stop offset="0.45" stop-color="#E7DCC8"/>
-          <stop offset="1" stop-color="#D9C5A7"/>
+          <stop stop-color="#FDFBF9"/>
+          <stop offset="0.5" stop-color="#F7F0E7"/>
+          <stop offset="1" stop-color="#E7DCC8"/>
         </linearGradient>
-        <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 110) rotate(116.201) scale(398.367 526.176)">
-          <stop stop-color="#FFFFFF" stop-opacity="0.75"/>
+        <radialGradient id="glow" cx="600" cy="400" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 400) scale(800 600)">
+          <stop stop-color="#FFFFFF" stop-opacity="0.6"/>
           <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
         </radialGradient>
       </defs>
-      <rect width="1200" height="800" rx="42" fill="url(#bg)"/>
-      <rect width="1200" height="800" rx="42" fill="url(#glow)"/>
-      <rect x="58" y="58" width="1084" height="684" rx="34" fill="rgba(255,255,255,0.18)" stroke="rgba(64,49,35,0.14)"/>
-      <rect x="86" y="90" width="228" height="42" rx="21" fill="rgba(29,36,51,0.82)"/>
-      <text x="200" y="117" text-anchor="middle" fill="#F7F0E7" font-size="15" font-weight="700" font-family="Arial, Helvetica, sans-serif" letter-spacing="3">${escapeSvgText(eyebrow.toUpperCase())}</text>
-      <text x="${x}" y="260" text-anchor="${textAnchor}" fill="#1D2433" font-size="68" font-weight="700" font-family="Georgia, Times New Roman, serif">${escapeSvgText(title)}</text>
-      <text x="${x}" y="324" text-anchor="${textAnchor}" fill="#43506A" font-size="28" font-weight="500" font-family="Arial, Helvetica, sans-serif">${escapeSvgText(subtitle)}</text>
-      <path d="M86 620C196 530.667 310.667 486 430 486C549.333 486 658.667 523.333 758 598C847.333 662 945.333 694 1052 694" stroke="rgba(29,36,51,0.16)" stroke-width="2"/>
-      <circle cx="1048" cy="182" r="96" fill="rgba(29,36,51,0.08)"/>
-      <circle cx="1088" cy="162" r="24" fill="rgba(183,121,43,0.35)"/>
-      <rect x="86" y="652" width="188" height="18" rx="9" fill="rgba(29,36,51,0.12)"/>
-      <rect x="86" y="684" width="124" height="18" rx="9" fill="rgba(29,36,51,0.08)"/>
+      <rect width="1200" height="800" fill="url(#bg)"/>
+      <rect width="1200" height="800" fill="url(#glow)"/>
+      
+      <!-- Abstract decorative lines -->
+      <path d="M0 600C300 500 600 700 1200 500" stroke="rgba(29,36,51,0.04)" stroke-width="2" fill="none"/>
+      <path d="M0 650C400 550 800 750 1200 600" stroke="rgba(29,36,51,0.03)" stroke-width="1.5" fill="none"/>
+      
+      <!-- Content Group -->
+      <g transform="translate(0, 40)">
+        <rect x="480" y="100" width="240" height="36" rx="18" fill="rgba(29,36,51,0.05)"/>
+        <text x="${centerX}" y="123" text-anchor="${textAnchor}" fill="#43506A" font-size="14" font-weight="700" font-family="system-ui, sans-serif" letter-spacing="4">${escapeSvgText(eyebrow.toUpperCase())}</text>
+        
+        <text x="${centerX}" y="280" text-anchor="${textAnchor}" fill="#1D2433" font-size="52" font-weight="700" font-family="Georgia, serif">${escapeSvgText(title)}</text>
+        <text x="${centerX}" y="340" text-anchor="${textAnchor}" fill="#43506A" font-size="22" font-weight="400" font-family="system-ui, sans-serif" opacity="0.8">${escapeSvgText(subtitle)}</text>
+      </g>
+      
+      <!-- Minimalist Brand Accent -->
+      <circle cx="600" cy="550" r="40" fill="rgba(183,121,43,0.1)"/>
+      <path d="M585 550L615 550M600 535L600 565" stroke="#B7792B" stroke-width="2" opacity="0.5"/>
     </svg>
   `;
+
+  return toSvgDataUrl(svg);
+}
 
   return toSvgDataUrl(svg);
 }
